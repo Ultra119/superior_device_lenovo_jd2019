@@ -6,6 +6,9 @@ vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/li
 product/lib64/libaptX_encoder.so|
 product/lib64/libaptXHD_encoder.so|
 
+# Display postprocessing
+product/lib64/libsdm-disp-apis.qti.so
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
