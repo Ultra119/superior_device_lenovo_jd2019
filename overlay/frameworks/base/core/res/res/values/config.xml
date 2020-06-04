@@ -571,4 +571,8 @@
          it causes the device to wake up.
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
+
+    <!-- Lockscreen rotation is default disabled into fmwk -->              
+    <bool name="config_enableLockScreenRotation">false</bool>
+
 </resources>
