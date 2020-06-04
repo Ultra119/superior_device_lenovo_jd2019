@@ -22,6 +22,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 CUSTOM_BUILD_TYPE := OFFICIAL
 
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cesium_jd2019
 PRODUCT_BRAND := lenovo
