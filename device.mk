@@ -12,10 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
-# Boot animation
-#TARGET_SCREEN_HEIGHT := 2244
-#TARGET_SCREEN_WIDTH := 1080
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -26,6 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
@@ -63,18 +60,14 @@ PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
+
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
-<<<<<<< HEAD
-=======
-PRODUCT_PRODUCT_PROPERTIES += \
-   vendor.bluetooth.soc=cherokee \
-   ro.vendor.fm.use_audio_session=true
->>>>>>> 17fa17b... Fix bootloop
 
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
 
@@ -82,11 +75,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
-<<<<<<< HEAD
-=======
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml
->>>>>>> 17fa17b... Fix bootloop
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -104,35 +92,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# Permissions
-PRODUCT_COPY_FILES += \
-<<<<<<< HEAD
-=======
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
-
-# Pixel identification
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys
-
-# Permissions
-PRODUCT_COPY_FILES += \
->>>>>>> 17fa17b... Fix bootloop
-    $(LOCAL_PATH)/configs/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/privapp-permissions-google-p.xml
-
 # Power
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
     android.hardware.power@1.3-service.lenovo-libperfmgr \
     android.hardware.power.stats@1.0-service.lenovo
 
-=======
-    android.hardware.power@1.2-service-qti
-
-# QTI Performance
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
->>>>>>> 17fa17b... Fix bootloop
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:system/etc/powerhint.json
 
@@ -147,8 +111,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -166,19 +132,11 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
-<<<<<<< HEAD
 
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
-=======
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.enable_hwc_vds=1 \
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
->>>>>>> 17fa17b... Fix bootloop
