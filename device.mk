@@ -13,8 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_TARGET_VNDK_VERSION := 29
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2244
-TARGET_SCREEN_WIDTH := 1080
+#TARGET_SCREEN_HEIGHT := 2244
+#TARGET_SCREEN_WIDTH := 1080
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -22,7 +22,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -30,7 +29,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
-    Gcam
+    GCam
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/org.codeaurora.snapcam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.codeaurora.snapcam.xml
