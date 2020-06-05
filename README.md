@@ -1,4 +1,4 @@
-Device configuration for Lenovo Z5s (L78071).
+Device configuration for Lenovo Z5s (L78071). DON'T USE!!!
 =======================================================
 
 Basic   | Spec Sheet
