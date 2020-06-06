@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
+
+# Google Camera
+ PRODUCT_PACKAGES += \
     GCam
 
 PRODUCT_COPY_FILES += \
