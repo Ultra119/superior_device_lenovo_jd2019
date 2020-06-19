@@ -8,6 +8,7 @@ product/lib64/libaptXHD_encoder.so|
 
 # Display postprocessing
 product/lib64/libsdm-disp-apis.qti.so
+product/lib64/vendor.display.color@1.0.so
 
 # FM
 lib64/fm_helium.so
