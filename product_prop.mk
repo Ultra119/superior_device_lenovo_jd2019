@@ -3,6 +3,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
    vendor.bluetooth.soc=cherokee \
    ro.vendor.fm.use_audio_session=true
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.camera.expose.aux=1 \
+    ro.config.zuk.has_ir_camera=true \
+    sys.camera.packagename.zui=1 \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
+    persist.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.zui.camera 
+
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
@@ -16,7 +25,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     media.settings.xml=/system/etc/media_profiles_vendor.xml
-
 
 # Pixel identification
 PRODUCT_PRODUCT_PROPERTIES += \
