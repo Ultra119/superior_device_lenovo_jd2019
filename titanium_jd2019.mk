@@ -17,7 +17,7 @@
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common ROM stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/titanium/config/common_full_phone.mk)
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -25,7 +25,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_jd2019
+PRODUCT_NAME := titanium_jd2019
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := jd2019
 PRODUCT_MANUFACTURER := lenovo
