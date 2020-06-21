@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/titanium_jd2019.mk
+    $(LOCAL_DIR)/superior_jd2019.mk
 
 COMMON_LUNCH_CHOICES := \
-    titanium_jd2019-user \
-    titanium_jd2019-userdebug \
-    titanium_jd2019-eng
+    superior_jd2019-user \
+    superior_jd2019-userdebug \
+    superior_jd2019-eng
