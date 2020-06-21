@@ -34,4 +34,3 @@ PRODUCT_MODEL := Lenovo Z5s
 # Other
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
