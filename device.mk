@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
+    $(LOCAL_PATH)/configs/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
 
 # IMS
 PRODUCT_PACKAGES += \
