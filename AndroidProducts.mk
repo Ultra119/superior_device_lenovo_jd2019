@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_jd2019.mk
+    $(LOCAL_DIR)/lineage_jd2019.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_jd2019-user \
-    superior_jd2019-userdebug \
-    superior_jd2019-eng
+    lineage_jd2019-user \
+    lineage_jd2019-userdebug \
+    lineage_jd2019-eng
