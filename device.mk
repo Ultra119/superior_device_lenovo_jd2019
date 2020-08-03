@@ -83,12 +83,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.lenovo_jd2019
 
-# Livedisplay
-ifeq ($(findstring Plus, $(CUSTOM_VERSION)),)
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
-endif
-    
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
