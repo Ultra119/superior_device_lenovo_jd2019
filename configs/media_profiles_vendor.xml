@@ -542,9 +542,9 @@
              channels="2" />
     </EncoderProfile> -->
     <!-- Huaqin modified by chenqiang for 2019-469 at 2018.9.28 end -->
-        <ImageEncoding quality="95" />
-        <ImageEncoding quality="80" />
-        <ImageEncoding quality="70" />
+        <ImageEncoding quality="100" />
+        <ImageEncoding quality="100" />
+        <ImageEncoding quality="100" />
         <ImageDecoding memCap="20000000" />
 
     </CamcorderProfiles>
