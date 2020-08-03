@@ -30,6 +30,7 @@
 
 #include "AudioStreaming.h"
 #include "Power.h"
+#include "display-helper.h"
 
 #ifndef TAP_TO_WAKE_NODE
 #define TAP_TO_WAKE_NODE "/sys/class/touch/tp_dev/gesture_on"
@@ -198,6 +199,15 @@ Return<void> Power::powerHint(PowerHint_1_0 hint, int32_t data) {
                 } else {
                     mHintManager->EndHint("LAUNCH");
                 }
+            }
+            break;
+        case PowerHint_1_0::LOW_POWER:
+            if (data) {
+                // Device in battery saver mode, enable display low power mode
+                set_display_lpm(true);
+            } else {
+                // Device exiting battery saver mode, disable display low power mode
+                set_display_lpm(false);
             }
             break;
         default:
