@@ -27,9 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap \
 	
-# Superior Launcher
-TARGET_LAUNCHER := oplauncher	
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/org.codeaurora.snapcam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.codeaurora.snapcam.xml
 
